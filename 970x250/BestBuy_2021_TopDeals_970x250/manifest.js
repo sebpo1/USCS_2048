@@ -27,8 +27,8 @@ FT.manifest({
 
 	    {"name": "logo_img", 	  		"type": "image", "default": "images/970x250.png"},
 
-	    {"name": "CTA_img", 	  		"type": "image", "default": "images/cta_gen_728x90_v1.png"},
-	    {"name": "CTA_hover_img", 	  	"type": "image", "default": "images/cta_gen01_728x90_v1.png"},
+	    {"name": "CTA_img", 	  		"type": "image", "default": "images/cta_gen_970x250_v1.png"},
+	    {"name": "CTA_hover_img", 	  	"type": "image", "default": "images/cta_gen01_970x250_v1.png"},
 
 	    {"name": "backup_img", 	  		"type": "image", "default": "images/blank.png"}
 

@@ -181,8 +181,8 @@ var container	= document.getElementById('container'),
 				// TweenMax.set(fstProd,{opacity:1,delay:0});
 				TweenMax.to(carousel_mask, 0.2,{opacity:1, ease: Strong.easeInOut, delay:0.1});
 
-				TweenMax.to([arrow_left, arrow_leftOverlay], 0.5, {opacity: 1, display:'block', left:'187px', ease: Strong.easeInOut, delay:0.1}); // slide in
-				TweenMax.to([arrow_right, arrow_rightOverlay], 0.5, {opacity: 1, display:'block', right:'384px', ease: Strong.easeInOut, delay:0.1}); // slide in
+				TweenMax.to([arrow_left, arrow_leftOverlay], 0.5, {opacity: 1, display:'block', left:'225px', ease: Strong.easeInOut, delay:0.1}); // slide in
+				TweenMax.to([arrow_right, arrow_rightOverlay], 0.5, {opacity: 1, display:'block', right:'520px', ease: Strong.easeInOut, delay:0.1}); // slide in
 
 			}
 
@@ -191,7 +191,7 @@ var container	= document.getElementById('container'),
 					holdTime	  = .85,
 					tl 			  = new TimelineMax(),
 					id 			  = 1;
-				TweenMax.set(carouselItems[1],{left:Ad.WIDTH,opacity:1,top:-90});
+				TweenMax.set(carouselItems[1],{left:Ad.WIDTH,opacity:1,top:-250});
 
 				tl.addLabel('firstOut',holdTime);
 				tl.to(carouselItems[0],.35,{left:-Ad.WIDTH,ease:Strong.easeOut},'firstOut');
@@ -209,7 +209,7 @@ var container	= document.getElementById('container'),
                     while(tempNum < carouselItems.length){
                         
                         holdTime+= 1.85;
-                        TweenMax.set(carouselItems[tempNum],{left:Ad.WIDTH,opacity:1,top:-90});
+                        TweenMax.set(carouselItems[tempNum],{left:Ad.WIDTH,opacity:1,top:-250});
                         tl.addLabel('secondOut',holdTime);
                         tl.to(carouselItems[tempNum-1],.35,{left:-Ad.WIDTH,ease:Strong.easeOut},'secondOut');
                         tl.to(carouselItems[tempNum],.35,{left:0,ease:Strong.easeOut},'secondOut');
@@ -250,8 +250,8 @@ var container	= document.getElementById('container'),
 
 				//ARROWS
 				setTimeout(function(){
-					TweenMax.to(arrow_left,.35,{left:"187px"});
-					TweenMax.to(arrow_right,.35,{right:"384px"});
+					TweenMax.to(arrow_left,.35,{left:"225px"});
+					TweenMax.to(arrow_right,.35,{right:"520px"});
 				}, 500)
 
 				TweenMax.to(arrow_leftOverlay,.35,{opacity:0, display:'none'});
@@ -289,12 +289,12 @@ var container	= document.getElementById('container'),
 					if(products_info.length >=2){
 						slide2 = products_info[1].slide;
 						TweenMax.set(slide2,{opacity:.7});
-						TweenMax.to(slide2, 0.5, {left: 103, ease: Strong.easeInOut, delay:0});
+						TweenMax.to(slide2, 0.5, {left: 150, ease: Strong.easeInOut, delay:0});
 					}
 					if(products_info.length >=3){
 						lastSlide = products_info[products_info.length-1].slide;
 						TweenMax.set(lastSlide,{opacity:.7, left: -300});
-						TweenMax.to(lastSlide, 0.5, {left: -103, ease: Strong.easeInOut, delay:0});
+						TweenMax.to(lastSlide, 0.5, {left: -140, ease: Strong.easeInOut, delay:0});
 					}
                     
                     // NOTE: not sure what this is for so commented it out 2020.Aug.21
@@ -903,7 +903,7 @@ var container	= document.getElementById('container'),
 
 
 				wrapper.classList.add('item');
-				TweenMax.set(wrapper,{transformOrigin:'right bottom',top:-90});
+				TweenMax.set(wrapper,{transformOrigin:'right bottom',top:-250});
 
 
 				wrapper.classList.add('ad-size');
