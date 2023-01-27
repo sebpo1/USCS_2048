@@ -23,7 +23,7 @@ FT.manifest({
 	    {"name": "F5_headline_copy_img",	"type": "image", "default": "images/blank.png"},
 	    {"name": "F5_background_img",		"type": "image", "default": "images/blank.png"},
 
-	    {"name": "legal_copy", 	  		"type": "text",  "default": "&copy; 2018 Best Buy"},
+	    {"name": "legal_copy", 	  		"type": "text",  "default": "&copy;2023 Best Buy"},
 
 	    {"name": "logo_img", 	  		"type": "image", "default": "images/970x250.png"},
 

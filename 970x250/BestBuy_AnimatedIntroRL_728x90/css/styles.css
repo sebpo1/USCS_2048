@@ -15,8 +15,8 @@
 }
 
 .ad-size{ 
-	width: 970px;
-	height: 250px;
+	width: 728px;
+	height: 90px;
 }
 
 img{
@@ -44,8 +44,6 @@ body{
 }
 
 div#container{
-    /* background-color: rgba(236, 38, 38, 0.747); */
-    /* opacity: 0.5; */
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -73,16 +71,11 @@ div#container > div{
 /*  layer frames  */
 div#logo   { z-index: 229; }
 #logo0 { 
-	/* z-index: 228; 
-    left: 20px !important;
-    top: 100px !important;
-	width: 160px;
-	height: 90px; */
-    z-index: 228;
-    left: -11px !important;
-    top: 84px !important;
-    width: 157px;
-    height: 80px;
+	z-index: 228; 
+    left: 0px !important;
+    top: 14px !important;
+	width: 100px;
+	height: 59px;
 }
 
 div#frame1{ z-index: 4;font-size:.95em;text-align: center; }
@@ -149,8 +142,8 @@ div.item > .clicker {
     position: absolute;
     left: -728px;
     top: 0px;
-    width: 970px;
-	height: 250px;
+    width: 728px;
+    height: 90px;
     display: block;
     z-index: 100000;
 
@@ -159,12 +152,12 @@ div.item > .clicker {
 /*  frame 5  */
 
 div#frame5 > div.text-wrapper, div#frame5_img > div.text-wrapper {
-    top: -50%;
-    left: 220px;
+    top: 50%;
+    left: 0px;
     padding: 0px 0 0 365px;
     font-size: 26px;
     transform: none;
-    width: 970px;
+    width: 728px;
     height: auto;
     /* line-height: 27px; */
     display: block;
@@ -200,9 +193,9 @@ div#frame5_img > img.hover{
 }
 div#frame5 > p.legal, div#frame5_img > p.legal {
     position: absolute;
-    bottom: 10px;
-    left: 30px;
-    font-size: 9px;
+    bottom: 2px;
+    left: 6px;
+    font-size: 8px;
     color: #003a63;
     font-weight: bold;
     z-index: 991;
@@ -240,8 +233,8 @@ div#frame5 > p.legal > sup, div#frame5_img > p.legal > sup{
 .slide {
     position: absolute;
     display: block;
-    width: 970px;
-	height: 250px;
+    width: 728px;
+    height: 90px;
     overflow: hidden;
     left: -728px;
     top: 0px;
@@ -414,8 +407,8 @@ div.pinwheel_hold{
     top:-25px;
 }
 #feedFail{
-    width: 970px;
-	height: 250px;
+    width: 728px;
+    height: 90px;
     top:0;
     left:0;
     display:block;
@@ -426,8 +419,8 @@ div#container > #ctaBox {
     position: absolute;
     top: 0px;
     left: 364px;
-    width: 116px;
-    height: 37px;
+    width: 363px;
+    height: 90px;
     z-index: 600;
     display: none;
 }
