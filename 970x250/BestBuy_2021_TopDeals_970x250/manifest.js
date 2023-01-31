@@ -20,12 +20,12 @@ FT.manifest({
 	    {"name": "F1_background_img",		"type": "image", "default": "images/AnimatedIntro_frm1_bg_728x90.jpg"},
 
 	    {"name": "F5_headline_copy", 	"type": "text",  "default": "Let's find what<br>you're looking for."},
-	    {"name": "F5_headline_copy_img",	"type": "image", "default": "images/blank.png"},
+	    {"name": "F5_headline_copy_img",	"type": "image", "default": "images/Q3_2022_F5_HLcopy_970x250.png"},
 	    {"name": "F5_background_img",		"type": "image", "default": "images/blank.png"},
 
 	    {"name": "legal_copy", 	  		"type": "text",  "default": "&copy;2023 Best Buy"},
 
-	    {"name": "logo_img", 	  		"type": "image", "default": "images/970x250.png"},
+	    {"name": "logo_img", 	  		"type": "image", "default": "images/bb_logo_970x250.png"},
 
 	    {"name": "CTA_img", 	  		"type": "image", "default": "images/cta_gen_970x250_v1.png"},
 	    {"name": "CTA_hover_img", 	  	"type": "image", "default": "images/cta_gen01_970x250_v1.png"},

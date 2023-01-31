@@ -104,7 +104,7 @@ var container	= document.getElementById('container'),
 				TweenMax.from(logo0, 0.5, {x: 401, y: -27, width:"200px", height: "120px", delay: 0.5});
 				if(myFT.instantAds.F1_headline_copy_img.indexOf("blank") >= 0) {
 					console.log("NO Frame 1 copy image");
-					TweenMax.fromTo(frame1_headline, 2, {x: -10}, {x: 10, delay: 1, ease: Power0.easeNone});
+					TweenMax.fromTo(frame1_headline, 2, {x: -10}, {x: 10, delay: 0.7, ease: Power0.easeNone});
 
 				}
 				else {
@@ -181,8 +181,8 @@ var container	= document.getElementById('container'),
 				// TweenMax.set(fstProd,{opacity:1,delay:0});
 				TweenMax.to(carousel_mask, 0.2,{opacity:1, ease: Strong.easeInOut, delay:0.1});
 
-				TweenMax.to([arrow_left, arrow_leftOverlay], 0.5, {opacity: 1, display:'block', left:'225px', ease: Strong.easeInOut, delay:0.1}); // slide in
-				TweenMax.to([arrow_right, arrow_rightOverlay], 0.5, {opacity: 1, display:'block', right:'520px', ease: Strong.easeInOut, delay:0.1}); // slide in
+				TweenMax.to([arrow_left, arrow_leftOverlay], 0.5, {opacity: 1, display:'block', left:'280px', ease: Strong.easeInOut, delay:0.1}); // slide in
+				TweenMax.to([arrow_right, arrow_rightOverlay], 0.5, {opacity: 1, display:'block', right:'475px', ease: Strong.easeInOut, delay:0.1}); // slide in
 
 			}
 
@@ -250,8 +250,8 @@ var container	= document.getElementById('container'),
 
 				//ARROWS
 				setTimeout(function(){
-					TweenMax.to(arrow_left,.35,{left:"225px"});
-					TweenMax.to(arrow_right,.35,{right:"520px"});
+					TweenMax.to(arrow_left,.35,{left:"280px"});
+					TweenMax.to(arrow_right,.35,{right:"475px"});
 				}, 500)
 
 				TweenMax.to(arrow_leftOverlay,.35,{opacity:0, display:'none'});
@@ -279,22 +279,24 @@ var container	= document.getElementById('container'),
 				}
 				TweenMax.set([cta,headline,frame5_copyImg], {opacity:0});
 
-				// TweenMax.to((frame5,frame5_img), 0.5, {top: 0, ease: Strong.easeInOut}); // slide in
+				TweenMax.from([text_wrapper_fm6, frame5_copyImg], 0.5, {opacity:0,x:60, ease: Strong.easeInOut, delay:1});
 
-				// TweenMax.from([text_wrapper_fm6, frame5_copyImg], 0.5, {left: -300, ease: Strong.easeInOut, delay:.25});
-				TweenMax.to([frame5_copyImg], 0.5, {opacity: 1, ease: Circ.easeInOut, delay:1});
+				//  TweenMax.to((frame5,frame5_img,frame5_copyImg), 0.5, {top: 0,opacity:1, x:38, ease: Strong.easeInOut}); // slide in
+
+				  
+				TweenMax.to([frame5_copyImg], 0.5, {opacity: 1, x:60, ease: Circ.easeInOut, delay:1});
 				TweenMax.set(carousel,{opacity:1,delay:.05});
 
 				TweenMax.to(carousel, 0.5, {opacity: 1, ease: Strong.easeOut, delay:.05,onComplete:function () {
 					if(products_info.length >=2){
 						slide2 = products_info[1].slide;
 						TweenMax.set(slide2,{opacity:.7});
-						TweenMax.to(slide2, 0.5, {left: 150, ease: Strong.easeInOut, delay:0});
+						TweenMax.to(slide2, 0.5, {left: 155, ease: Strong.easeInOut, delay:0});
 					}
 					if(products_info.length >=3){
 						lastSlide = products_info[products_info.length-1].slide;
 						TweenMax.set(lastSlide,{opacity:.7, left: -300});
-						TweenMax.to(lastSlide, 0.5, {left: -140, ease: Strong.easeInOut, delay:0});
+						TweenMax.to(lastSlide, 0.5, {left: -185, ease: Strong.easeInOut, delay:0});
 					}
                     
                     // NOTE: not sure what this is for so commented it out 2020.Aug.21

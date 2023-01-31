@@ -161,12 +161,11 @@ div.item > .clicker {
 div#frame5 > div.text-wrapper, div#frame5_img > div.text-wrapper {
     top: -50%;
     left: 220px;
-    padding: 0px 0 0 365px;
-    font-size: 26px;
+    padding: 0px 0 0 376px;
+    font-size: 24px;
     transform: none;
     width: 970px;
     height: auto;
-    /* line-height: 27px; */
     display: block;
     z-index: 1;
     text-align: left;
@@ -288,7 +287,7 @@ p.price {
     height: 250px;
     justify-content: center;
     align-content: center;
-    left: 260px;
+    left: 310px;
 }
 
 
@@ -327,7 +326,7 @@ p.name{
     z-index: 499;
     opacity: 0;
     transform: translateY(-50%);
-    left: 225px;
+    left: 0px;
 }
 #arrow_leftOverlay{
     position: absolute;
@@ -344,7 +343,7 @@ p.name{
 #arrow_right {
     position: absolute;
     display: none;
-    right: 520px;
+    right: 0px;
     top: 50%;
     z-index: 499;
     opacity: 0;
