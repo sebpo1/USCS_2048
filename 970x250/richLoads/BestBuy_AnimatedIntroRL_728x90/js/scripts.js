@@ -293,7 +293,7 @@ var container	= document.getElementById('container'),
 					}
 					if(products_info.length >=3){
 						lastSlide = products_info[products_info.length-1].slide;
-						TweenMax.set(lastSlide,{opacity:.7, left: -300});
+						TweenMax.set(lastSlide,{opacity:.7, left: -155});
 						TweenMax.to(lastSlide, 0.5, {left: -103, ease: Strong.easeInOut, delay:0});
 					}
                     
